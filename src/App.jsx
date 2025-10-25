@@ -41,7 +41,7 @@ function App() {
       }}
     >
       <Typography variant="h4" gutterBottom>
-        Welcome to the Fitness Tracker App
+        Welcome to the JackedLabs
       </Typography>
       <Typography variant="subtitle1" sx={{ mb: 3 }}>
         Please login to access your activities
@@ -53,12 +53,6 @@ function App() {
       </Button>
     </Box>
             ) : (
-              // <div>
-              //   <pre>{JSON.stringify(tokenData, null, 2)}</pre>
-              //   <pre>{JSON.stringify(token, null, 2)}</pre>
-              // </div>
-
-             
 
               <Box sx={{ p: 2, border: '1px dashed grey' }}>
                  <Button variant="contained" color="secondary" onClick={logOut}>
@@ -71,6 +65,7 @@ function App() {
                 <Route path="/" element={token ? <Navigate to="/activities" replace/> : <div>Welcome! Please Login.</div>} />
               </Routes>
             </Box>
+            
             )}
     </Router>
   )

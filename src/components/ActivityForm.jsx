@@ -28,7 +28,7 @@ const ActivityForm = ({ onActivityAdded }) => {
         <Select
             value={activity.type}
             onChange={(e) => setActivity({...activity, type: e.target.value})}>
-                <MenuItem value="RUNNING">Running</MenuItem>
+                <MenuItem value="RUNNING">Runnng</MenuItem>
                 <MenuItem value="WALKING">Walking</MenuItem>
                 <MenuItem value="CYCLING">Cycling</MenuItem>
             </Select>
