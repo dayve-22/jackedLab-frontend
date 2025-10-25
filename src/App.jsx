@@ -29,7 +29,7 @@ function App() {
 
   return (
     <Router>
-      {/* {!token ? (
+      {!token ? (
       <Box
       sx={{
         height: "100vh",
@@ -45,13 +45,13 @@ function App() {
       </Typography>
       <Typography variant="subtitle1" sx={{ mb: 3 }}>
         Please login to access your activities
-      </Typography> */}
+      </Typography>
       <Button variant="contained" color="primary" size="large" onClick={() => {
                 logIn();
               }}>
         LOGIN
       </Button>
-    {/* </Box>
+    </Box>
             ) : (
               // <div>
               //   <pre>{JSON.stringify(tokenData, null, 2)}</pre>
@@ -71,7 +71,7 @@ function App() {
                 <Route path="/" element={token ? <Navigate to="/activities" replace/> : <div>Welcome! Please Login.</div>} />
               </Routes>
             </Box>
-            )} */}
+            )}
     </Router>
   )
 }
